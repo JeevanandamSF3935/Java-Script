@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library portal</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="Validate.js"></script>
+        <script src="Reset.js"></script>
+        <script src="Show.js"></script>
+        <script src="Hide.js"></script>
+    </head>
+    <body onload="Hide()">
+        <div>
+            <table>
+                <tr>
+                    <td><img src="images/library.png" height="50px" width="50px"></td>
+                    <td>Library Portal</td>
+                    <td><p style="padding-left:20px;"><a style="padding-left:50px;" href="#">Books</a></p></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <form action="default.html">
+                <table>
+                    <tr>
+                        <td><h2>Add New Book</h2></td>
+                    </tr>
+                    <tr>
+                        <td><label>Category</label></td>
+                        <td>
+                            <select id="departments" onchange="return CheckDepartmentError(departments.value)">
+                                <option value="Department">Department</option>
+                                <option value="IT">IT</option>
+                                <option value="CSE">CSE</option>
+                                <option value="ECE">ECE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr><td>    </td><td><span id="department_error"></span></td></tr>
+                    <tr>
+                        <td><label>Book</label></td>
+                        <td><input type="text" id="book" onkeyup="return CheckBookError(book.value)" onblur="return CheckBookError(book.value)"></td>
+                    </tr>
+                    <tr><td>    </td><td><span id="book_error"></span></td></tr>
+                    <tr>
+                        <td><label>Author Email</label></td>
+                        <td><input type="text" id="authormail" onkeyup="return CheckAuthorMail(authormail.value)" onblur="return CheckAuthorMail(authormail.value)"></td>
+                    </tr>
+                    <tr><td>    </td><td><span id="authormail_error"></span></td></tr>
+                    <tr>
+                        <td><label>Author Name</label></td>
+                        <td><input type="text" id="authorname" onkeyup="CheckAuthorName(authorname.value)" onblur="CheckAuthorName(authorname.value)"></td>
+                    </tr>
+                    <tr><td>    </td><td><span id="authorname_error"></span></td></tr>
+                    <tr>
+                        <td><label>Published</label></td>
+                        <td><input type="text" id="publish" onkeyup="CheckPublishError(publish.value)" onblur="CheckPublishError(publish.value)"></td>
+                    </tr>
+                    <tr><td>    </td><td><span id="publish_error"></span></td></tr>
+                    <tr>
+                        <td><label>Price</label></td>
+                        <td><input type="text" id="price" onkeyup="CheckPriceError(price.value)" onblur="CheckPriceError(price.value)"></td>
+                    </tr>
+                    <tr><td>    </td><td><span id="price_error"></span></td></tr>
+                    <tr>
+                        <td><br><button type="submit" onclick="return OnClickValidate()">Save</button><br></td>
+                        <td><br><button type="reset" onclick="ResetDocument()">Cancel</button><br></td>
+                        <td><br><button type="button" onclick="Show()">Show</button><br></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div style="margin-top: -12px;">
+            <pre><br>Copyright @ 2019 - presenting Syncfusion<br><br></pre>
+        </div>
+        <div id="showimagediv">
+            <table>
+                <tr>
+                    <td><img src="images/library.png" height="50px" width="50px"></td>
+                    <td>Library Portal</td>
+                    <td><p style="padding-left:20px;"><a style="padding-left:50px;" href="#">Books</a></p></td>
+                </tr>
+            </table>
+        </div>
+        <div id="showdatadiv">
+            <table>
+                <tr>
+                    <td><h2>Book details</h2></td>
+                </tr>
+                <tr>
+                    <td><label>Category</label></td>
+                    <td><p id="depatmentshow"></p></td>
+                </tr>
+                <tr>
+                    <td><label>Book</label></td>
+                    <td><p id="bookshow"></p></td>
+                </tr>
+                <tr>
+                    <td><label>Author Email</label></td>
+                    <td><p id="authormailshow"></p></td>
+                </tr>
+                <tr>
+                    <td><label>Author Name</label></td>
+                    <td><p id="authornameshow"></p></td>
+                </tr>
+                <tr>
+                    <td><label>Published</label></td>
+                    <td><p id="publishshow"></p></td>
+                </tr>
+                <tr>
+                    <td><label>Price</label></td>
+                    <td><p id="priceshow"></p></td>
+                </tr>
+            </table>
+        </div>
+        <div id="showcopyrightdiv" style="margin-top: -12px;">
+            <pre><br>Copyright @ 2019 - presenting Syncfusion<br><br></pre>
+        </div>
+    </body>
+</html>

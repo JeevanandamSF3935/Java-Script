@@ -1,0 +1,49 @@
+pre{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+}
+p{
+    margin-left: 30px;
+}
+select{
+    border-color: black;
+    border-radius: 1mm;
+    border-width: 0.6mm;
+    padding-right: 90px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 20px;
+}
+input{
+    border-color: black;
+    border-radius: 1mm;
+    border-width: 0.6mm;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+button{
+    border-color: black;
+    padding-left: 5mm;
+    padding-right: 5mm;
+    border-radius: 1mm;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    border-width: 0.6mm;
+}
+div{
+    outline-style: solid;
+}
+span{
+    margin-left: 20px;
+}
